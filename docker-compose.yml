@@ -6,3 +6,8 @@ services:
     build:
       context: .
       dockerfile: OpenWeatherMapApi/Dockerfile
+  react-redux-weather:
+    image: ${DOCKER_REGISTRY-}react-redux-weather
+    build:
+      context: .
+      dockerfile: react-redux-weather/Dockerfile
